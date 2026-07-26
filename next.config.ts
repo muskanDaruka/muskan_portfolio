@@ -6,6 +6,7 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: "/muskan_portfolio",
+  assetPrefix: "/muskan_portfolio/",
 };
 
 export default nextConfig;
