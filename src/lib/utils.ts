@@ -8,3 +8,5 @@ export function cn(...inputs: ClassValue[]) {
 export function formatRange(start: string, end: string) {
   return `${start} — ${end}`;
 }
+
+export const basePath = process.env.NODE_ENV === "production" ? "/muskan_portfolio" : "";
