@@ -10,7 +10,6 @@ import { SocialLinks } from "@/components/social-links";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import profile from "../../../public/images/profile.png"
 
 export function Hero() {
   const typed = useTypingAnimation(portfolio.hero.taglines);
@@ -118,7 +117,7 @@ export function Hero() {
           <div className="absolute inset-6 rounded-full bg-gradient-to-br from-[var(--gradient-start)] via-[var(--gradient-mid)] to-[var(--gradient-end)] opacity-20 blur-2xl" />
           <div className="relative h-4/5 w-4/5 overflow-hidden rounded-full border border-border bg-card shadow-2xl shadow-primary/10">
             <Image
-              src={profile} // Place your image inside the public folder
+              src="/images/profile.png" // Place your image inside the public folder
               alt={portfolio.hero.name}
               fill
               priority
