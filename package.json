@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "export": "next build",
-    "deploy": "gh-pages -d out"
+    "predeploy": "next build",
+    "deploy": "gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
