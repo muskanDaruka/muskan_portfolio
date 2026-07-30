@@ -117,7 +117,8 @@ export function Hero() {
           <div className="absolute inset-6 rounded-full bg-gradient-to-br from-[var(--gradient-start)] via-[var(--gradient-mid)] to-[var(--gradient-end)] opacity-20 blur-2xl" />
           <div className="relative h-4/5 w-4/5 overflow-hidden rounded-full border border-border bg-card shadow-2xl shadow-primary/10">
             <Image
-              src={`${process.env.NODE_ENV === "production" ? "/muskan_portfolio" : ""}/images/profile.png`} // Place your image inside the public folder
+              // src={`${process.env.NODE_ENV === "production" ? "/muskan_portfolio" : ""}/images/profile.png`} // Place your image inside the public folder
+              src={`/images/profile.png`}
               alt={portfolio.hero.name}
               fill
               priority
