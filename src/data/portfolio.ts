@@ -1,5 +1,7 @@
 import type { PortfolioData } from "@/types/portfolio";
 
+const basePath = process.env.NODE_ENV === "production" ? "/muskan_portfolio" : "";
+
 export const portfolio: PortfolioData = {
   hero: {
     name: "Muskan Daruka",
@@ -13,7 +15,7 @@ export const portfolio: PortfolioData = {
     intro:
       "Frontend-focused Software Developer with 2 years of hands-on experience building scalable and responsive web applications using React.js, Next.js, TypeScript, JavaScript, and Redux. Skilled in API integration, authentication, payment gateway integration, and performance optimization — now expanding into Node.js, Express.js, and MongoDB to deliver end-to-end web solutions.",
     location: "Surat, Gujarat, India",
-    resumeUrl: "/resume/resume.pdf",
+    resumeUrl: `${basePath}/resume/resume.pdf`,
   },
 
   about: {
